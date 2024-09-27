@@ -1,5 +1,6 @@
 import telebot
 import json
+from config import TOKEN, CHANNEL_ID  # Importing credentials from config.py
 from plugins.file_management import upload_file
 from plugins.user_management import manage_user
 from plugins.password_protection import check_password
@@ -11,8 +12,6 @@ from handlers.stats_handler import stats_command
 from handlers.broadcast_handler import broadcast_command
 from handlers.ban_handler import ban_user
 
-TOKEN = "your_bot_token"
-CHANNEL_ID = "@your_channel_id"
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
