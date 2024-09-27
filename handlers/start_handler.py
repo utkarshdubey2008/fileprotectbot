@@ -1,4 +1,3 @@
-
 import telebot
 
 def start_command(bot, message):
