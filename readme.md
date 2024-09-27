@@ -83,3 +83,5 @@ You can host this bot on various platforms. Here are some options:
 ## Conclusion
 
 This Telegram bot is designed to be user-friendly and straightforward, making it easy for anyone to manage file uploads securely. By following the hosting guides above, you can have your bot running in no time. Enjoy your new bot, and feel free to customize it further!
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=fileprotectbot&type=git&repository=utkarshdubey2008%2Ffileprotectbot&branch=main&builder=buildpack&regions=was&env%5B%5D=&ports=8000%3Bhttp%3B%2F)
