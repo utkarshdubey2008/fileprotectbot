@@ -1,6 +1,6 @@
 import telebot
 
-def help_command(message):
+def help_command(bot, message):
     help_text = """
     Available Commands:
     /start - Welcome message
