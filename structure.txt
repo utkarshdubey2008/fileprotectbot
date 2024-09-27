@@ -1,0 +1,22 @@
+telegram-file-store-bot/
+│
+├── bot.py                     # Main bot script
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── user_data.json             # User data storage
+│
+├── plugins/                   # Directory for plugin modules
+│   ├── __init__.py            # Makes this directory a package
+│   ├── file_management.py      # File upload and management
+│   ├── user_management.py      # User-related functionalities
+│   ├── password_protection.py   # Password handling
+│   ├── stats.py                # Statistics tracking
+│   └── premium_plans.py        # Premium plans management
+│
+└── handlers/                  # Directory for command handlers
+    ├── __init__.py            # Makes this directory a package
+    ├── start_handler.py        # Start command handler
+    ├── help_handler.py         # Help command handler
+    ├── stats_handler.py        # Stats command handler
+    ├── broadcast_handler.py     # Broadcast command handler
+    └── ban_handler.py          # Ban command handler
