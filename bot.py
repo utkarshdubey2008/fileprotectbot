@@ -1,5 +1,4 @@
 import telebot
-import json
 from config import TOKEN, CHANNEL_ID  # Importing credentials from config.py
 from plugins.file_management import upload_file
 from plugins.user_management import manage_user
@@ -16,23 +15,23 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-    start_command(message)
+    start_command(bot, message)  # Pass the bot instance
 
 @bot.message_handler(commands=['help'])
 def handle_help(message):
-    help_command(message)
+    help_command(bot, message)  # Pass the bot instance
 
 @bot.message_handler(commands=['stats'])
 def handle_stats(message):
-    stats_command(message)
+    stats_command(bot, message)  # Pass the bot instance
 
 @bot.message_handler(commands=['broadcast'])
 def handle_broadcast(message):
-    broadcast_command(message)
+    broadcast_command(bot, message)  # Pass the bot instance
 
 @bot.message_handler(commands=['ban'])
 def handle_ban(message):
-    ban_user(message)
+    ban_user(bot, message)  # Pass the bot instance
 
 @bot.message_handler(content_types=['document'])
 def handle_file_upload(message):
